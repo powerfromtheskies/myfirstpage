@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <button>form dısı</button>
+    <form action="/food">
+      <button type="button">lütfen bu formu gönderme</button>
+      <label for="username">kullanıcı adı giriniz:</label>
+      <input
+        id="username"
+        type="text"
+        placeholder="kullanıcı adı"
+        name="username"
+      />
+      <label for="password">sifre giriniz:</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="sifre"
+        name="password"
+      />
+      <button>gönder</button>
+      <label for="color">renk seçin:</label>
+      <input id="color" type="color" name="color" />
+      <label for="number">numara girin:</label>
+      <input id="number" type="number" />
+      <button>buton</button>
+    </form>
+    <br />
+    <hr />
+    <br />
+    <form action="https://www.reddit.com/search">
+      <label for="search">search reddit</label>
+      <input type="text" id="search" name="q" />
+      <button>reddit ara</button>
+    </form>
+    <form action="https://www.google.com.tr/search">
+      <label for="search">search google</label>
+      <input type="text" id="search" name="q" />
+      <button>GOOGLE ARA</button>
+    </form>
+    \
+    <form action="https://www.youtube.com/search">
+      <label for="search">search youtube</label>
+      <input type="text" id="search" name="q" />
+      <button>youtube ara</button>
+    </form>
+    <br />
+    <hr />
+    <br />
+    <h2>daha fazla input çesidi</h2>
+    <form>
+      <input type="checkbox" name="tos" id="agree" checked />
+      <label for="agree">kabul ediyorum</label>
+    </form>
+    <form>
+      <p>
+        <input type="radio" name="a" id="xs" />
+        <label for="xs">xs</label>
+        <input type="radio" name="a" id="s" />
+        <label for="s">s</label>
+        <input type="radio" name="a" id="m" />
+        <label for="m">m</label>
+      </p>
+      <p>
+        <label for="animal"></label>
+        <select name="animal" id="animal">
+          <option value="fish">balık</option>
+          <option value="bird" selected>kuş</option>
+          <option value="dog">köpek</option>
+        </select>
+      </p>
+      <p>
+        <label for="cheese">peynir</label>
+        <input
+          type="range"
+          name="cheese_level"
+          id="cheese"
+          min="0"
+          max="10"
+          step="5"
+        />
+      </p>
+      <p>
+        <label for="note">özel istek</label><br />
+        <textarea
+          name="note"
+          id="note"
+          cols="10"
+          rows="10"
+          placeholder="buraya isteklerinizi yazın"
+        ></textarea>
+      </p>
+      <button>yolla</button>
+    </form>
+    <br />
+    <hr />
+    <br />
+    <form>
+      <p>
+        <label for="first">isim giriniz</label>
+        <input type="text" name="first" id="first" required />
+        <br />
+        <label for="password">sifre giriniz</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="4"
+          maxlength="12"
+        />
+        <button>gönder</button>
+      </p>
+    </form>
+  </body>
+</html>
